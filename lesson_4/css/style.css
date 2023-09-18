@@ -66,8 +66,16 @@ color: darkslateblue;
 	color: purple !important ;
 }
 */
+/*
 .stay-pereyaslav > p{
 	color:orange;
  }
  
- 
+ .stay-pereyaslav ~ p{
+	color: red;
+ }
+
+ .stay-pereyaslav + p {
+	color: green;
+ }
+ /*
