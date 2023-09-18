@@ -1,0 +1,73 @@
+@import url("reset.css");
+
+*{
+	color: chartreuse;
+}
+ p{
+	color: blue;
+ }
+ a{
+	color: coral;
+ }
+ li{
+	color: darkmagenta;
+ }
+.info h2{
+	color: aqua;
+}
+
+.early-years p{
+	color: darkred;
+}
+.court-chapel h3{
+	color: darkgreen;
+}
+.foreign-trip p{
+	color: blueviolet;
+}
+
+.death mark{
+  color: blue;
+}
+#creative p{
+	color: darkgoldenrod;
+}
+
+div.publication-works h2{
+	color: violet;
+}
+
+.stay-pereyaslav h3,
+.footer li ,
+.slobozhanshchyna p{
+  color: darkgreen;
+}
+
+[class*="info"] p{
+color: darkslateblue;
+}
+
+#info-chapel p{
+	color: blueviolet;
+}
+
+.navigation ol li a{
+	color: blue;
+} 
+
+
+.navigation a{
+	color: darkcyan;
+}
+
+/*
+#vip{
+	
+	color: purple !important ;
+}
+*/
+.stay-pereyaslav > p{
+	color:orange;
+ }
+ 
+ 
