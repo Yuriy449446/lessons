@@ -8,7 +8,7 @@
 
   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
 
-
+  @import url("reset.css");
 
   body span {
   	font-family: 'Fuggles', cursive;
@@ -136,10 +136,7 @@
 	
   }
 
-  .project-sublist li {
-  	list-style: none;
-  }
-
+  
   .why-us h2 {
   	color: #37393F;
   	font-family: Poppins;
