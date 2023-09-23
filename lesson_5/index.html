@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="uk">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<link href="https://fonts.googleapis.com/css2?family=Fuggles&family=Kenia&display=swap" rel="stylesheet"> 
+		<link rel="stylesheet" href="css/style.css">
+		<title>Lesson 5</title>
+	</head>
+	<body>
+		<header>
+			<ul id="top" class="font-face">
+				<li><a href="#property">Властивість</a></li>
+				<li><a href="#format">Використання декількох форматів файлів</a></li>
+				<li><a href="#form-ts">Формати</a></li>
+				<li><a href="#posible">Можливі значення</a></li>
+				<li><a href="#lazy">Ліниве завантаження шрифтів</a></li>
+			</ul>
+		</header>
+		<main>
+			<div id="property" class="font">
+				<h1 >css властивість font-face</h1>
+				<p>
+					CSS-функція <span>@font-face</span> можна використовувати для завантаження власного шрифту, щоб ви не були повністю залежними від шрифтів, встановлених на комп'ютері користувача.
+				</p>
+				<p>
+					Функція @font-face дозволяє вам вибирати з більш широкого кола шрифтів, ніж доступно звичайно, спираючись виключно на
+					системні шрифти користувача.
+				</p>
+				 <h3>Можливі значення</h3>
+				 <p>
+					Шрифти, зазначені за допомогою команди <span>@font-face</span> при правильній версії, виводяться та активуються лише у тому випадку, якщо вони використовуються у документі HTML. Це добре для продуктивності, оскільки шрифт не завантажується, якщо цього не потрібно.
+				 </p>
+				 <img width="300" src="img/img-font-face.png" alt="img">
+				<p>
+					У цьому прикладі за допомогою <span>@font-face</span> відбувається завантаження шрифту. Як сімейство шрифтів використовується "Open Sans". Потім йде звертання до цього сімейства шрифтів, коли він використовується для елемента <span>body</span>.
+				</p>
+              <p>
+					Не використовуючи <span>@font-face</span>, шрифти, які користувач може побачити на сторінці, буде обмежена шрифтами, встановленими на його пристрої.
+				</p>
+				<p>
+					Отже, якщо у прикладі не використовувалася функція <span>@font-face</span> для підключення шрифту, шрифт "Open Sans" для елемента <span>body</span> буде працювати, лише якщо користувач встановив цей шрифт на своєму пристрої. Якщо ні, його браузер використовуватиме стандартний шрифт з сімейства sans-serif. Багато систем використовують Helvetica або Arial як стандартний шрифт sans-serif, проте немає гарантії, що навіть ці шрифти будуть встановлені в системі користувача.
+				</p>
+			</div>
+			<div id="formats" class="file-formats">
+				<h2>Використання декількох форматів файлів</h2>
+				<p>
+					Ви можете надати список форматів шрифтів для завантаження. Якщо система користувача не підтримує один формат, він може підтримувати наступний у своєму списку і так далі.
+				</p>
+				<h4 class="example" >Ось приклад:</h4>
+				 <img width="300" src="img/img-font-face2.png" alt="img">
+				<p>
+					У наведеному вище прикладі використовується функція local(), щоб отримати шрифт з локальної системи користувача. Якщо його не знайдено, він буде шукати наступний параметр - у цьому випадку - параметр .woff2. Якщо система не підтримує цей формат шрифту, вона буде використовувати опцію .woff. Якщо він не підтримує цей параметр, він буде використовувати опцію .ttf.
+				</p>
+				<p>
+					Якщо жоден з цих параметрів не працює, елемент <span>body</span> буде в кінцевому підсумку використовувати стандартний шрифт sans-serif у системі користувача.
+				</p>
+				<div id="form-ts" class="formats">
+					<h2>Формати</h2>
+					<p class="formats-filе">Строки форматування, визначені у CSS:</p>
+					<ul>
+						<li>"woff" - WOFF (Web Open Font Format) - .woff</li>
+						<li>"truetype" - TrueType - .ttf</li>
+						<li>"opentype" - OpenType - .ttf, .otf</li>
+						<li>"embedded-opentype" - Embedded OpenType - .eot</li>
+						<li>"svg" - SVG Font - .svg, .svgz</li>
+					</ul>
+					<p>
+						Формат файлу WOFF був розроблений, щоб забезпечити легке, просте у застосуванні стиснення шрифтів, придатних для використання з функцією <span>@font-face</span>. Будь-який належним чином ліцензований TrueType / OpenType / Open Font Format файл може бути упакований у форматі WOFF для використання в Інтернеті.
+					</p>
+					<p>
+						Формат WOFF2 забезпечує поліпшене стиснення у форматі WOFF, і він спостерігається приблизно на 30% швидше (і навіть на 50% швидше), ніж WOFF1, в залежності від використовуваного шрифту.
+					</p>
+				</div>
+				<div id="posible" class="posible-values">
+					<h2>Можливі значення</h2>
+					<p>
+						У <span>@font-face</span> прописуються такі дескриптор, які визначають місце розташування шрифтів як локально, так і зовні, а також стильові характеристики окремого сімейства шрифтів:
+					</p>
+					<h4><span>font-family</span></h4>
+					<p>
+						Це дескриптор сімейства шрифтів, який визначає назву шрифту. Це ім'я, про яке ви посилаєтесь у своїх деклараціях CSS, коли ви хочете послатися на цей шрифт. Цей дескриптор обов'язковий.
+					</p>
+					<h4 id="src-src">src</h4>
+					<p>
+						Визначає адресу за якою розташований шрифт. Його значення - це пріоритетний список, розділений комами, список зовнішніх або локальних посилань. Коли викликається шрифт, браузер проходить список наведених посилань, використовуючи перший, який він може успішно активувати. Шрифти, що містять недійсні дані або не знайдені локальні шрифти, ігноруються, а браузер завантажує наступний шрифт зі списку. Цей дескриптор обов'язковий. 
+					</p>
+					<h4><span>font-style</span></h4>
+					<p>
+						Цей дескриптор визначає жирність тексту, який буде використовувати даний шрифт.
+					</p>
+					<div class="font-style">
+						<ol>
+							<li>Можливі значення:
+								<ul>
+									<li>normal</li>
+									<li>italic</li>
+									<li>oblique</li>
+								</ul>
+							</li>
+						</ol> 
+						<h5>Значення без задання normal.</h5>
+					</div>
+					<div class="font-weight">
+						<h4><span>font-weight</span></h4>
+						<p>
+							Цей дескриптор визначає жирність тексту, який буде використовувати даний шрифт.
+						</p>
+
+						<ol>
+							<li>Можливі значення:
+								<ul>
+									<li>normal</li>
+									<li>bold</li>
+									<li>100</li>
+									<li>200</li>
+									<li>300</li>
+									<li>400</li>
+									<li>500</li>
+									<li>600</li>
+									<li>700</li>
+									<li>800</li>
+									<li>900</li>
+								</ul>
+							</li>
+						</ol>
+					</div>
+				</div>
+			</div>
+			<div id="lazy" class="lazy-loading">
+				<h2>Ліниве завантаження шрифтів</h2>
+				<p>
+					<span>@font-face</span> призначена для повільного завантаження ресурсів шрифтів, які завантажуються тільки якщо
+					вказаний шрифт використовується в документі. Якщо сторінка не містить елементів, які використовують шрифт, він не
+					буде завантажений.
+				</p>
+				<h4>Розглянемо цей приклад:</h4>
+				<img width="300" src="img/img-font-face3.png" alt="img">
+			</div>
+			
+         <div class="value">
+				<h4>Властивість font-face може отримувати 7 значень:</h4>
+				<ol>
+					<li>font-family 
+						<ul>
+							<li>- Визначає назву шрифту</li>
+						</ul>
+					</li>
+					<li>src 
+						<ul>
+							<li>- Визначає адресу за якою розташований шрифт</li>
+						</ul>
+					</li>
+					<li>font-style 
+						<ul>
+							<li>- Цей дескриптор визначає стиль тексту, до якого буде застосований даний шрифт.</li>
+						</ul>
+					</li>
+					<li>font-weight 
+						<ul>
+							<li>- Цей дескриптор визначає жирність тексту, який буде використовувати даний шрифт.</li>
+						</ul>
+					</li>
+					<li>font-stretch 
+						<ul>
+							<li>- Цей дескриптор визначає розтягування тексту, до якого застосований даний шрифт.</li>
+						</ul>
+					</li>
+					<li>unicode-range 
+						<ul>
+							<li>- Цей дескриптор визначає набір кодів Unicode, які можуть підтримуватися типом шрифту, для якого він оголошений.</li>
+						</ul>
+						 </li>
+					<li>font-feature-settings unicode-range 
+						  <ul>
+							<li>- Цей дескриптор визначає початкові параметри, які застосовуються при відтворенні шрифту.</li>
+						  </ul>
+						</li>
+				</ol>
+
+			</div>
+			 <section>
+				<div class="project">
+					<h2>Project Information</h2>
+					<p>
+						Distinctively re-engineer revolutionary meta service and premium architectures incubate intuitive opportunities
+						and
+						real-time potentialities. Appropriately communicates once one technology after plug-and-play networks.
+				
+						Quickly aggregates users and worldwides potentialities progressively plagiarize resource leveling e-commerce
+						through
+						resource leveling cores competencies dramatically mesh low risk high yield alignments before transparent
+						e-tailers.
+					</p>
+					<div class="project-list">
+						<ul>
+							<li>the printing and typesetting industry.</li>
+							<li>Lorem Ipsum has been the industry's standard</li>
+							<li>It has survived not only five centuries.</li>
+						</ul>
+					</div>
+					<p>
+						Compellingly embrace empowered e-business after user friendly intellectual capitals Interactively actualize
+						front-end processes with effectives convergenced Synergistically deliver performanced based methods empowerment
+						whereas distributed expertised efficiently enable enabled sources and cost effective products completely ethical
+						communities.
+					</p>
+					<div class="project-sublist">
+						<ol>
+							<li>01. the printing and typesetting</li>
+							<li>02. Lorem Ipsum has been the industry's standard</li>
+							<li>03. It has survived not only five centuries</li>
+						</ol>
+					</div>
+					<p>
+						Compellingly embrace empowered e-business after user friendly intellectual capitals Interactively actualize
+						front-end processes with effectives convergenced Synergistically deliver performanced based methods empowerment
+						whereas distributed expertised efficiently enable enabled sources and cost effective products completely ethical
+						communities.
+					</p>
+				</div>
+				<div class="why-us">
+					<h2>
+						Why Us For International Business Management Consulting!
+					</h2>
+					<p>
+						Completely synergized resourced taxings relationships premiers markets ultivate one-to-one customer service with robust ideas dynamically innovated resources leveling customer service for state of the art  customer service innovate product  for reliable supply engage web services cutting-edge deliverables.
+					</p>
+					<div class="proctively">
+						<h3>Proactively envisioned multimedia based expertise media growth  superior collaboration.</h3>
+					</div>
+					<p>
+						One-to-one customer service with robust ideas dynamically innovated resources for reliable supply engage web services cutting-edge deliverables.
+					</p>
+				</div>
+			 </section>
+		</main>
+		<footer>
+			<div class="footer">
+				<h5>Додаткові посилання</h5>
+				<ol id="certificate">
+					<li><a target="_blank" href="https://css.in.ua/css/property/font">font</a></li>
+					<li><a target="_blank" href="https://css.in.ua/css/property/font-family">font-family</a></li>
+					<li><a target="_blank" href="https://css.in.ua/css/property/font-size">font-size</a></li>
+					<li><a target="_blank" href="https://css.in.ua/css/property/font-weight">font-weight</a></li>
+					<li><a target="_blank" href="https://css.in.ua/css/property/font-style">font-style</a></li>
+					<li><a target="_blank" href="https://css.in.ua/css/property/font-variant">font-variant</a></li>
+					<li><a target="_blank" href="https://css.in.ua/css/property/font-stretch">font-stretch</a></li>
+					<li><a target="_blank" href="https://css.in.ua/css/property/font-size-adjust">font-size-adjust</a></li>
+					<li><a target="_blank" href="https://css.in.ua/css/property/font-feature-values">font-feature-values</a></li>
+					<li><a target="_blank" href="https://css.in.ua/css/property/font-feature-settings">font-feature-settings</a></li>
+					<li><a target="_blank" href="https://css.in.ua/css/property/font-kerning">font-kerning</a></li>
+					<li><a target="_blank" href="https://css.in.ua/css/property/font-language-override">font-language-override</a></li>
+					<li><a target="_blank" href="https://css.in.ua/css/property/font-synthesis">font-synthesis</a></li>
+					<li><a target="_blank" href="https://css.in.ua/css/property/font-variant-alternates">font-variant-alternates</a></li>
+					<li><a target="_blank" href="https://css.in.ua/css/property/font-variant-caps">font-variant-caps</a></li>
+					<li><a target="_blank" href="https://css.in.ua/css/property/font-variant-east-asian">font-variant-east-asian</a></li>
+					<li><a target="_blank" href="https://css.in.ua/css/property/font-variant-ligatures">font-variant-ligatures</a></li>
+					<li><a target="_blank" href="https://css.in.ua/css/property/font-variant-numeric">font-variant-numeric</a></li>
+					<li><a target="_blank" href="https://css.in.ua/css/property/font-variant-position">font-variant-position</a></li>
+					<li><a target="_blank" href="https://css.in.ua/css/property/text-orientation">text-orientation</a></li>
+				</ol>
+			</div>
+			<div class="footer-footer">
+				<h6><a href="#top">Вгору!</a></h6>
+			</div>
+		</footer>
+	</body>
+</html>

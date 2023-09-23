@@ -1,0 +1,165 @@
+  @import url("fonts.css");
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Fuggles&family=Kenia&family=Martian+Mono:wght@400;600;800&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+
+
+  body span {
+  	font-family: 'Fuggles', cursive;
+  	color: rgb(212, 14, 54);
+  	font-size: 30px;
+  	text-decoration: underline;
+  }
+
+
+
+
+  .formats {
+  	font-family: 'Martian Mono', monospace;
+  	font-weight: 600;
+  	color: blue;
+
+  }
+
+  #src-src {
+  	font-family: 'Kenia', cursive;
+  	color: rgba(12, 184, 47, 0.7);
+  	font-size: 25px;
+
+  }
+
+  .font-style {
+  	font-family: 'Martian Mono', monospace;
+  	font-style: italic;
+  	font-weight: 800;
+  }
+
+  .font-weight li {
+  	font-family: 'Christmas ScriptC';
+  	font-style: italic;
+  	color: rgb(19, 219, 32, 0.7);
+  	letter-spacing: 7px;
+
+  }
+
+  .posible-values h2 {
+  	font-family: 'Christmas ScriptC';
+  }
+
+  #certificate li a {
+  	font-family: 'Beer money';
+  	font-style: italic;
+  	font-size: 25px;
+  	color: rgb(0, 255, 64, 0.7);
+
+
+
+  }
+
+  .footer ol li {
+  	text-shadow: 2px 2px 0.5px rgb(0, 0, 255),
+  		0px -1px 0.5px rgb(0, 255, 183);
+
+  }
+  
+  footer h5{
+	font-family: 'Beer money';
+	font-style: italic;
+	font-size: 25px;
+	color: rgba(11, 15, 10, 0.9);
+  }
+
+  .lazy-loading h2 {
+  	text-transform: capitalize;
+  	text-align: center;
+  	color: brown;
+  	line-height: 2.27;
+
+  }
+
+  .formats-filе {
+  	word-spacing: 15px;
+  	text-transform: uppercase;
+  	color: rgb(100, 149, 237, 0.8);
+  	text-shadow: 0px 2px 0px black;
+  }
+
+  .posible-values h2 {
+  	text-transform: lowercase;
+  }
+
+  .footer-footer h6 a {
+  	text-decoration: none;
+  	letter-spacing: 3px;
+  }
+
+  .example {
+  	font-family: 'Intro Demo', sans-serif;
+  	font-weight: 900;
+  }
+
+  .project h2 {
+  	color: #37393F;
+  	font-family: Poppins;
+  	font-size: 40px;
+  	font-weight: 700;
+  	line-height: 1.27;
+  }
+
+  .project p {
+  	color: #7D7D7D;
+  	font-family: Inter;
+  	font-size: 18px;
+  	line-height: 1.46;
+  }
+
+  .project-list {
+  	color: #7D7D7D;
+  	font-family: Inter;
+  	font-size: 18px;
+  	font-weight: 500;
+  	line-height: 1.46;
+  }
+
+  .project-sublist {
+  	color: #7D7D7D;
+  	font-family: Inter;
+  	font-size: 18px;
+  	font-weight: 500;
+  	line-height: 1.46;
+	
+  }
+
+  .project-sublist li {
+  	list-style: none;
+  }
+
+  .why-us h2 {
+  	color: #37393F;
+  	font-family: Poppins;
+  	font-size: 30px;
+  	font-weight: 600;
+  	line-height: 1.27;
+  }
+
+  .why-us p {
+  	color: #7D7D7D;
+  	font-family: Inter;
+  	font-size: 18px;
+  	font-weight: 400;
+  	line-height: 1.46;
+  }
+
+  .proctively h3 {
+  	color: #6B77E5;
+  	font-family: Poppins;
+  	font-size: 20px;
+  	font-weight: 600;
+  	line-height: 1.27;
+  }
