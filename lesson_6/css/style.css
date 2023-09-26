@@ -1,0 +1,134 @@
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+  @import url("reset.css");
+
+  .wraper {
+  	max-width: 715px;
+  	margin: 0 auto 50px;
+  	font-family: "Inter", sans-serif;
+  	color: #7D7D7D;
+  	font-size: 18px;
+  	line-height: 1.46;
+  }
+
+  .img {
+  	margin-bottom: 24px;
+  }
+
+  .img img {
+  	padding: 10px 12px 13px 11px;
+  	width: 100%;
+  }
+
+  .container {
+  	max-width: 692px;
+  	margin: 0 auto;
+  }
+
+  .business-management {
+  	margin-bottom: 42px;
+  }
+
+  .business-management h1,
+  .proactively h2 {
+  	font-family: "Poppins";
+  	font-weight: 600;
+  	line-height: 1.27;
+  }
+
+  .business-management h1 {
+  	color: #37393F;
+  	font-size: 30px;
+  	margin-bottom: 5px;
+  }
+
+  .proactively h2 {
+  	color: #6B77E5;
+  	font-size: 20px;
+  	margin-bottom: 12px;
+  }
+
+
+
+  .proactively {
+  	margin-bottom: 39px;
+  }
+
+
+
+  .benefits img {
+  	max-width: 313px;
+  	max-height: 265px;
+  }
+
+  .benefits-content {
+  	display: inline-block;
+  	max-width: 313px;
+  	margin-left: 30px;
+  }
+
+  .benefits-title,
+  .sab-benefits-title {
+  	font-family: "Poppins";
+  	font-weight: 600;
+  	line-height: 1.27;
+  }
+
+  .benefits-title {
+  	color: #37393F;
+  	font-size: 25px;
+  	margin-bottom: 15px;
+  }
+
+  .sab-benefits-title {
+  	color: #40DDB6;
+  	font-size: 20px;
+  	margin-bottom: 23.5px;
+  }
+
+  .check ul li {
+  	background: url(../img/check.svg) no-repeat left;
+  	padding-left: 32px;
+  	margin-bottom: 26px;
+  }
+
+  .jewellery {
+  	max-width: 1170px;
+  	margin: 0 auto;
+  	font-family: "Inter", sans-serif;
+  	color: #474747;
+  	font-size: 20px;
+  	line-height: 1.8;
+  }
+
+  .wat-do {
+  	color: #D06B00;
+  	font-size: 28px;
+  	margin-bottom: 13px;
+  }
+
+  .develop-create {
+  	color: #0E333D;
+  	font-family: "DM Serif Text";
+  	font-size: 59px;
+  	line-height: 1.46;
+  	max-width: 526px;
+  	margin-bottom: 25px;
+  }
+
+  .jewellery img {
+  	max-width: 273px;
+  	border-radius: 5px;
+  	border: solid 5px transparent;
+  }
+
+  .jewellery-text {
+  	max-width: 563px;
+  }
+
+  .jewellery-container {
+  	display: inline-block;
+  	margin-right: 38px;
+  }
