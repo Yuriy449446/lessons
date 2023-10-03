@@ -1,0 +1,586 @@
+@import url("fonts.css");
+@import url("reset.css");
+
+body {
+	background: #FFF;
+	color: #7D7D7D;
+	font-size: 18px;
+	font-family: "Inter", sans-serif;
+	line-height: 1.2;
+
+}
+
+header {
+	max-width: 1950px;
+	margin: 0 auto 150px;
+}
+
+.header-container {
+	background: #37393F;
+	margin-bottom: 30px;
+
+}
+
+.header,
+.sub-heder {
+	max-width: 1220px;
+	margin: 0 auto;
+
+}
+
+
+.header-left,
+.header-right {
+	display: inline-block;
+}
+
+.header-right {
+	width: 49%;
+	text-align: right;
+}
+
+.header-place,
+.header-mail {
+	display: inline-block;
+
+}
+
+.header-place {
+	margin-right: 42px;
+}
+
+.header-place img,
+.header-mail img {
+	margin-right: 11px;
+
+}
+
+.header {
+	padding: 20px 0px;
+}
+
+.header-place img {
+	width: 15px;
+	height: 22px;
+}
+
+.header-mail img {
+	width: 20px;
+	height: 15px;
+}
+
+.link {
+	display: inline-block;
+	font-size: 14px;
+	color: #FFF;
+}
+
+.header-left {
+	width: 49%;
+}
+
+.header-time,
+.header-social {
+	display: inline-block;
+}
+
+.header-time {
+	margin-right: 50px;
+
+}
+
+.header-social {
+	max-width: 135px;
+}
+
+.social li {
+	display: inline-block;
+	margin-right: 14px;
+}
+
+.social li a img {
+	width: 15px;
+}
+
+.logo h3 {
+	display: inline-block;
+	color: #37393F;
+	font-family: Poppins;
+	font-size: 25px;
+	font-weight: 700;
+}
+
+.logo h3 span {
+	color: #6B77E5;
+}
+
+.logo {
+	margin-right: 195px;
+	padding: 21.5px 0px;
+
+}
+
+.logo img {
+	width: 42px;
+	height: 30px;
+	vertical-align: middle;
+}
+
+.info,
+.logo {
+	display: inline-block;
+	margin-right: 40px;
+
+}
+
+.info li {
+	display: inline-block;
+	margin-right: 30px;
+
+
+}
+
+.info a {
+	text-decoration: none;
+	color: #37393F;
+}
+
+.info {
+	margin-right: 40px;
+}
+
+button {
+	font-family: "Cabin", sans-serif;
+	font-weight: 600;
+	text-transform: capitalize;
+	color: #FFF;
+	background: #6B77E5;
+	padding: 22px 35px;
+	text-align: center;
+	border-radius: 2px;
+}
+
+/* licencing*/
+
+.licencing {
+	max-width: 1218px;
+	margin: 0 auto 100px;
+	color: #37393F;
+}
+
+main .title {
+	font-family: "Poppins", sans-serif;
+  
+}
+main{
+	margin-bottom: 50px;
+}
+
+.licencing p {
+	line-height: 1.46;
+}
+
+.licencing-information span {
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	background: #40DDB6;
+	margin-right: 6px;
+}
+
+.licencing-information {
+	font-weight: 500;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.licencing.title {
+	font-size: 60px;
+	font-weight: 700;
+	margin-bottom: 70px;
+	line-height: 1.21;
+	text-align: center;
+}
+
+.iconc.title {
+	font-size: 40px;
+	font-weight: 700;
+	line-height: 1.21;
+	margin-bottom: 11px;
+
+}
+
+.iconc-graphics {
+	margin-bottom: 32px;
+}
+
+.phosphor.title {
+	font-size: 30px;
+	font-weight: 700;
+	margin-bottom: 100px;
+
+}
+
+.phosphor.title span {
+	color: #40DDB6;
+	font-weight: 400;
+	margin-left: 8px;
+
+}
+
+.photography.title {
+	font-size: 40px;
+	font-weight: 700;
+	line-height: 1.21;
+	margin-bottom: 11px;
+}
+
+.photography-text {
+	margin-bottom: 24px;
+}
+
+.pexels.title {
+	font-size: 30px;
+	font-weight: 700;
+	margin-bottom: 8px;
+}
+
+.pexels.title span {
+	color: #40DDB6;
+	font-weight: 400;
+	margin-left: 8px;
+
+}
+
+.pexels-text {
+	color: #40DDB6;
+	margin-bottom: 24px;
+
+}
+
+.unsplash.title {
+	font-size: 30px;
+	font-weight: 700;
+	margin-bottom: 8px;
+}
+
+.unsplash.title span {
+	color: #40DDB6;
+	font-weight: 400;
+	margin-left: 8px;
+}
+
+.unsplash-text {
+	margin-bottom: 100px;
+	color: #40DDB6;
+
+}
+
+.fonts {
+	font-size: 40px;
+	font-weight: 700;
+	line-height: 1.21;
+	margin-bottom: 11px;
+}
+
+.fonts-text span {
+	font-weight: 500;
+	color: #40DDB6;
+}
+
+/* Project*/
+
+.project {
+	max-width: 850px;
+	margin: 0 auto 100px;
+	padding: 0 10px;
+	line-height: 1.46;
+}
+
+.project-title {
+	color: #37393F;
+	font-family: "Poppins", sans-serif;
+	font-size: 40px;
+	font-weight: 700;
+	line-height: 1.27;
+	margin-bottom: 13px;
+}
+
+.distinctively,
+.project-info,
+.project-list,
+.project-maininfo,
+.subproject-list {
+	margin-bottom: 35px;
+}
+
+.project-list {
+	margin-left: 50px;
+}
+
+.project-list li {
+	list-style-type: circle;
+	margin-bottom: 25px;
+}
+
+.subproject-list {
+	margin-left: 30px;
+}
+
+.subproject-list li {
+	margin-bottom: 25px;
+}
+
+.juwellery {
+	max-width: 1125px;
+	margin: 0 auto 100px;
+	padding: 0 15px;
+	color: #606060;
+	font-size: 30px;
+	font-family: "Cormorant Infant", serif;
+	font-weight: 700;
+
+}
+
+.juwellery-container {
+	display: inline-block;
+	margin-right: 70px;
+	max-width: 500px;
+}
+
+.juwellery-what {
+	margin-top: 70px;
+	color: #D58417;
+	font-size: 20px;
+	line-height: 1;
+	margin-bottom: 27px;
+}
+
+.juwellery-title {
+	color: #000;
+	font-size: 64px;
+	line-height: 1;
+	margin-bottom: 31px;
+}
+
+.juwellery-text {
+	line-height: 1.4;
+	max-width: 489px;
+}
+
+.juwellery-img {
+	font-size: 0px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.img-wrarer {
+
+	display: inline-block;
+	border: 1px solid #502203;
+	border-radius: 90px;
+	margin-right: 30px;
+	width: 177px;
+	height: 336px;
+	vertical-align: middle;
+}
+
+.img-wrarer2 {
+	display: inline-block;
+	border: 1px solid #502203;
+	border-radius: 145px;
+	width: 307px;
+	height: 500px;
+	vertical-align: middle;
+}
+
+.img-wrarer img {
+	border-radius: 90px;
+	margin: 20px 0px 0px -10px;
+	font-size: 18px;
+	width: 100%;
+	height: 100%;
+
+}
+
+.img-wrarer2 img {
+	border-radius: 145px;
+	margin: 20px 0px 0px -10px;
+	font-size: 18px;
+	width: 100%;
+	height: 100%;
+
+}
+
+/* Clothing */
+.clothing {
+	max-width: 1240px;
+	margin: 0 auto 100px;
+	padding: 0 20px;
+	color: #807D7E;
+	font-size: 20px;
+	font-family: "Causten";
+	line-height: 1.67;
+	letter-spacing: 0.4px;
+}
+
+.clothing-title {
+	margin-bottom: 25px;
+	
+}
+
+.clothing-title h2 {
+	color: #3C4242;
+	font-family: "CoreSansC";
+	font-size: 28px;
+	font-weight: 700;
+	line-height: 1.19;
+	margin-bottom: 30px;
+	letter-spacing: 0.56px;
+}
+
+.clothing-title span {
+	display: inline-block;
+	width: 6px;
+	height: 28px;
+	border-radius: 10px;
+	background: #8A33FD;
+	margin-left: -15px;
+	vertical-align: middle;
+}
+
+.clothing-sabtitle {
+	color: #807D7E;
+	font-family: "CoreSansC";
+	font-weight: 700;
+}
+
+
+.womens-clothing {
+	margin-bottom: 20px;
+}
+
+.our-colection {
+	margin-bottom: 25px;
+}
+
+.one-stop h3 {
+	color: #807D7E;
+	font-family: "CoreSansC";
+	font-weight: 700;
+	margin-bottom: 20px;
+}
+
+.one-stoptop span {
+	font-weight: 700;
+}
+.one-stoptop {
+	margin-bottom: 20px;
+}
+.one-stop{
+	margin-bottom: 20px;
+}
+
+.see-more {
+	color: #807D7E;
+	font-family: "CoreSansC";
+	font-weight: 700;
+}
+
+
+.praktik {
+	width: 1600px;
+	border: 5px solid green;
+	margin: 0 auto;
+
+
+}
+.square {
+	
+	width: 300px;
+	height: 300px;
+	border-right: 10px solid red;
+	border-top: 10px dashed blue;
+	border-left: 10px dotted black;
+	border-bottom: 10px double orange;
+	margin: 50px auto;
+	box-shadow: 5px 5px 35px 10px #7fff00, -5px -5px 35px 10px #ff5100;
+	
+}
+.circle {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	border: 5px solid #33b113;
+	margin: 0 auto 50px;
+	outline: 10px solid #642b77;
+
+}
+.rectangle {
+  width: 300px;
+  height: 300px;
+  border: 5px dashed gray;
+  margin: 0 auto 50px;
+  border-right: transparent;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  background: #175602;
+  opacity: 0.5;
+
+}
+.triangle {
+	width: 0px;
+	height: 0px;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-bottom: 100px solid lawngreen;
+	margin: 0 auto 50px;
+}
+
+.triangle2 {
+	width: 0px;
+	height: 0px;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-top: 100px solid lawngreen;
+	margin: 0 auto 50px;
+}
+
+.triangle3 {
+	width: 0px;
+	height: 0px;
+	border-top: 50px solid transparent;
+	border-bottom: 50px solid transparent;
+	border-left: 100px solid rgb(252, 0, 17);
+	margin: 0 auto 50px;
+}
+
+.triangle4 {
+	width: 0px;
+	height: 0px;
+	border-bottom: 50px solid transparent;
+	border-top: 50px solid transparent;
+	border-right: 100px solid rgb(252, 0, 17);
+	margin: 0 auto 50px;
+}
+
+
+.footer-info{
+	width: 300px;
+	margin: 0 auto;
+	font-family: "CoreSansC";
+	font-weight: 700;
+	font-size: 25px;
+	color: #D58417;
+	margin-bottom: 25px;
+
+}
+.footer-year{
+	font-family: "Cormorant Infant", serif;
+	font-weight: 700;
+	width: 200px;
+	margin: 0 auto;
+	font-size: 25px;
+	padding-bottom: 25px;
+	
+	}
