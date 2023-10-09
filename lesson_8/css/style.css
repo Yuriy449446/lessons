@@ -281,7 +281,7 @@ body {
 }
 
 .experience-block {
-	max-width: 650px;
+	max-width: 620px;
 	margin: 0 auto;
 }
 
@@ -295,53 +295,58 @@ body {
 }
 
 .our-vision {
-	margin-bottom: 43px;
+	margin-bottom: 57px;
 }
 
 .experience-experience{
 	display: inline-block;
 	padding: 32px;
+	border: 1px solid #E3E3E3;
+	max-width:295px;
+	margin-right: 21px;
+	
 }
 .experience-winner {
 	display: inline-block;
-	max-width: 297px;
+	max-width:295px;
 	padding: 32px 37px;
+	border: 1px solid #E3E3E3;
 }
 
 .experience-experience h4 {
 	display: inline-block;
 }
 
-.experience-foto,
-.winner-foto {
-	width: 39px;
-	height: 38px;
-	margin-right: 15px;
-	display: inline-block;
-	vertical-align: top;
 
+
+.experience-title{
+	max-width: 231px;
+		
 }
-.experience-foto{
+.winner-title{
+	max-width: 222.5px;
+	
+}
+	
+.experience-experience  {
+	
+	display: inline-block;
 	background-image: url(../img/consulting/Iconexperience.svg);
 	background-repeat: no-repeat;
-	background-size: contain;
-	
+	background-size: 39px 38px;
+	background-position: 20px 35px;
 }
-.winner-foto{
+.experience-winner{
+	
+	display: inline-block;
 	background-image: url(../img/consulting/Iconwiner.svg);
 	background-repeat: no-repeat;
-	background-size: contain;
-	
+	background-size: 39px 38px;
+	background-position: 20px 35px;
 }
-
-.experience-title,
-.winner-title {
-	display: inline-block;
-
-}
-
-.winner-title p{
-	max-width: 164px;
+.winner-wraper,
+.experience-wraper{
+	padding-left: 40px;
 }
 
 .experience-title h4,
@@ -359,6 +364,8 @@ body {
 .winner-title p {
 	font-size: 16px;
 	line-height: 1.35;
+	display: inline-block;
+	
 
 }
 
@@ -378,7 +385,6 @@ body {
 	padding: 0px 10px;
 }
 
-.discover-foto {}
 
 .foto1,
 .foto2,
