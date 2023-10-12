@@ -1,0 +1,876 @@
+/* Підключення шрифтів */
+@import url("fonts.css");
+
+/* Скидання стилів */
+@import url("reset.css");
+
+/* Основні стилі */
+
+
+body {
+	font-family: "Inter", sans-serif;
+	font-size: 18px;
+	color: #7D7D7D;
+	font-weight: 400;
+
+}
+
+.game {
+	padding: 10px 20px;
+	width: 350px;
+	margin: 20px auto 50px;
+	font-size: 44px;
+	font-weight: 600;
+	text-transform: capitalize;
+	font-family: 'Black Ops One';
+	text-align: center;
+}
+
+.game a:hover {
+	color: brown;
+
+}
+
+.practice {
+	max-width: 650px;
+	margin: 30px auto 100px;
+	border: 5px double blue;
+	border-radius: 10px;
+	padding: 20px;
+
+}
+
+.button {
+	min-width: 100px;
+	padding: 15px;
+	outline: 1px solid lawngreen;
+	margin-right: 20px;
+	border-radius: 10px;
+	margin-bottom: 30px;
+	border: 3px solid transparent;
+
+}
+
+.practice-hover:hover {
+	border: 3px solid blueviolet;
+
+}
+
+.practice-active {
+	background-color: blue;
+	border: 3px solid transparent;
+}
+
+.practice-active:active {
+	background-color: rgb(222, 29, 29);
+	outline: 3px solid rgb(14, 14, 14);
+}
+
+
+
+
+.link:visited {
+	color: grey;
+}
+
+
+.link {
+	font-size: 25px;
+	color: brown;
+}
+
+
+.inpyt {
+	display: block;
+	margin-top: 15px;
+	border-radius: 5px;
+	min-width: 100px;
+	min-height: 30px;
+	border: 1px solid red;
+	padding: 5px;
+	width: 100%;
+}
+
+.inpyt:focus {
+	background-color: rgb(178, 112, 66);
+
+}
+
+
+.target-practice {
+	padding-top: 100px;
+}
+
+.target-practice li {
+
+	margin-bottom: 15px;
+	min-width: 50px;
+	height: 100%;
+	padding: 15px;
+	border: 1px solid blue;
+	border-radius: 10px;
+	text-align: center;
+}
+
+.target-form {
+	text-align: center;
+	margin-bottom: 30px;
+
+
+}
+
+.target-form li {
+	display: inline-block;
+	margin: 0px 30px;
+	outline: 3px solid mediumseagreen;
+	padding: 10px;
+	border-radius: 20px;
+	min-width: 60px;
+
+}
+
+
+.target-one:target {
+	background-color: red;
+}
+
+.target-two:target {
+	background-color: yellow;
+}
+
+.target-one:target {
+	background-color: red;
+}
+
+.target-three {
+	background-color: green;
+}
+
+.practice-hover,
+.practice-active {
+	text-transform: uppercase;
+}
+
+.practice-visited {
+	margin-bottom: 50px;
+	margin-left: 27%;
+
+}
+
+.practice-visited li {
+	display: inline-block;
+	margin-left: 25px;
+
+}
+
+input {
+	margin-bottom: 30px;
+}
+
+.position-pseudo {
+	margin-bottom: 50px;
+}
+
+.position-pseudo h2 {
+	font-size: 30px;
+	text-align: center;
+	padding: 5px 0px;
+	color: blanchedalmond;
+	margin-bottom: 25px;
+}
+
+.position-pseudo p {
+	margin-bottom: 25px;
+}
+
+.position-pseudo p:last-child {
+	margin-bottom: 0px;
+}
+
+
+
+.position-pseudo h3:last-of-type {
+	font-size: 20px;
+	background-color: black;
+	padding: 5px 0px;
+	color: blanchedalmond;
+	margin-bottom: 25px;
+	padding: 15px 10px;
+}
+
+.position-pseudo :first-child {
+	background-color: blue;
+}
+
+.position-pseudo :first-child {
+	background-color: blue;
+}
+
+.position-pseudo h3:first-of-type {
+	background-color: rgb(255, 0, 60);
+	margin-bottom: 25px;
+	padding: 15px 10px;
+	font-size: 30px;
+	text-align: center;
+}
+
+.position-pseudo :last-child {
+	background-color: chartreuse;
+	padding: 20px 10px;
+	font-size: 20px;
+	text-transform: capitalize;
+}
+
+.position-odd,
+.position-even {
+	margin-bottom: 30px;
+
+}
+
+.position-odd p,
+.position-even p,
+.position p {
+	margin-bottom: 30px;
+	padding: 10px;
+
+}
+
+.position-odd :nth-child(odd) {
+	background-color: cadetblue;
+}
+
+.position-even :nth-child(even) {
+	background-color: darkblue;
+}
+
+.position {
+	border: 3px solid rgb(119, 128, 0);
+	margin-bottom: 50px;
+}
+
+.position-even :nth-child(3) {
+	background-color: rgb(116, 0, 139);
+}
+
+.position p:nth-child(3n + 1) {
+	background-color: chartreuse;
+}
+
+.position p:nth-child(3n + 2) {
+	background-color: rgb(55, 0, 255);
+}
+
+.position :not(:last-child) {
+	color: rgb(126, 5, 27);
+}
+
+.position>*:not(:last-child) {
+	margin-bottom: 15px;
+}
+
+.practice>*:last-child {
+	margin-bottom: 0;
+}
+
+
+.pseudo-elements {
+	max-width: 100px;
+	margin: 0 auto;
+	font-family: "Inter", sans-serif;
+}
+
+.pseudo-elements h3 {
+	padding: 10px 20px;
+	border: 2px solid rgb(0, 255, 157);
+	max-width: 100px;
+	text-align: center;
+	border-radius: 5px;
+}
+
+.pseudo-elements ::before {
+	display: inline-block;
+	content: "Before";
+	width: 60px;
+	height: 20px;
+	border: 1px solid red;
+	border-radius: 2px;
+	margin-bottom: 10px;
+
+}
+
+.pseudo-elements ::after {
+	display: inline-block;
+	content: "After";
+	width: 60px;
+	height: 20px;
+	border: 1px solid rgb(0, 255, 13);
+	border-radius: 2px;
+	margin-top: 10px;
+
+}
+
+
+.wraper {
+	max-width: 715px;
+	margin: 0 auto 50px;
+	font-family: "Inter", sans-serif;
+	color: #7D7D7D;
+	font-size: 18px;
+	line-height: 1.46;
+}
+
+.img {
+	margin-bottom: 24px;
+}
+
+.img img {
+	padding: 10px 12px 13px 11px;
+	width: 100%;
+}
+
+.container {
+	max-width: 692px;
+	margin: 0 auto;
+}
+
+.business-management {
+	margin-bottom: 42px;
+}
+
+.business-management h1,
+.proactively h2 {
+	font-family: "Poppins";
+	font-weight: 600;
+	line-height: 1.27;
+}
+
+.business-management h1 {
+	color: #37393F;
+	font-size: 30px;
+	margin-bottom: 5px;
+}
+
+.proactively h2 {
+	color: #6B77E5;
+	font-size: 20px;
+	margin-bottom: 12px;
+}
+
+
+
+.proactively {
+	margin-bottom: 39px;
+}
+
+.benefits {
+	margin-bottom: 50px;
+}
+
+
+.benefits img {
+	max-width: 313px;
+	max-height: 265px;
+	vertical-align: baseline;
+}
+
+.benefits-content {
+	display: inline-block;
+	max-width: 313px;
+	margin-left: 30px;
+}
+
+.benefits-title,
+.sab-benefits-title {
+	font-family: "Poppins", sans-serif;
+	font-weight: 600;
+	line-height: 1.27;
+}
+
+.benefits-title {
+	color: #37393F;
+	font-size: 25px;
+	margin-bottom: 15px;
+}
+
+.sab-benefits-title {
+	color: #40DDB6;
+	font-size: 20px;
+	margin-bottom: 23.5px;
+}
+
+.check ul li:not(:last-child) {
+	margin-bottom: 30px;
+}
+
+.check ul li {
+	min-height: 27px;
+	padding-left: 8px;
+	position: relative;
+	padding-left: 35px;
+
+}
+
+
+.check li::before {
+	content: "";
+	min-width: 27px;
+	min-height: 27px;
+	background: url(../img/consulting/li.svg)no-repeat;
+	background-size: contain;
+	background-position: center;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+
+
+}
+
+.frequently {
+	color: #37393F;
+	font-family: "Poppins";
+	font-size: 30px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 1.27;
+	margin-bottom: 12.5px;
+}
+
+.frequently p {
+	line-height: 1.46;
+}
+
+
+.consulting {
+	max-width: 700px;
+	padding: 0px 15px;
+	margin: 100px auto;
+	line-height: 1.46;
+}
+
+.welcome::before {
+	content: " ";
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	background: #40DDB6;
+	margin-right: 6px;
+}
+
+
+.welcome {
+	color: #37393F;
+	font-weight: 500;
+	margin-bottom: 16px;
+}
+
+.consulting {
+	margin-bottom: 82px;
+}
+
+.consulting-title {
+	color: #37393F;
+	font-family: "Poppins", sans-serif;
+	font-size: 40px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 1.21;
+	margin-bottom: 20px;
+}
+
+.consulting-leverage {
+	margin-bottom: 15px;
+}
+
+.consulting-framework {
+	margin-bottom: 0px;
+}
+
+.consulting-text {
+	margin-bottom: 23px;
+}
+
+.experience-title p,
+.winner-title p {
+	font-size: 16px;
+	line-height: 1.35;
+	display: inline-block;
+
+
+}
+
+.consulting a {
+	font-family: "Inter", sans-serif;
+	font-weight: 600;
+	font-size: 18px;
+	text-transform: capitalize;
+	color: #FFF;
+	background: #6B77E5;
+	padding: 27px 35px;
+	border-radius: 3px;
+
+}
+
+.consulting a:hover {
+
+	color: #dc9797;
+	background: #1b2bb8;
+
+
+}
+
+.consulting button a:active {
+
+	color: #FFF;
+	background: #40DDB6;
+
+
+}
+
+
+
+.our-whitecollar li {
+	padding: 28px 38px;
+	margin-bottom: 31px;
+	border: 1px solid #e3e3e3;
+	border-radius: 2px;
+	font-family: "Poppins", sans-serif;
+	font-size: 20px;
+	font-weight: 600;
+
+
+}
+
+.our-whitecollar {
+	margin-bottom: 48px;
+
+}
+
+.our-whitecollar h3,
+.our-whitecollar p {
+
+	padding-left: 40px;
+
+}
+
+.our-whitecollar p {
+	font-family: "Inter", sans-serif;
+	font-size: 18px;
+	line-height: 1.46;
+	font-weight: 400;
+}
+
+
+.our-whitecollar h3 {
+	color: #37393F;
+	font-weight: 600;
+	margin-bottom: 17px;
+
+}
+
+
+.our-whitecollar li:last-child {
+	margin-bottom: 0px;
+}
+
+
+
+.our-whitecollar li::before {
+	content: " ";
+	display: block;
+	width: 27px;
+	height: 27px;
+	background-image: url(../img/consulting/li.svg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	position: absolute;
+
+
+}
+
+.we-work {
+	max-width: 1920px;
+	margin: 0 auto 100px;
+	padding-top: 110px;
+}
+
+.work-conyainer {
+	max-width: 1220px;
+	margin: 0 auto;
+}
+
+.work-title {
+	font-weight: 500;
+	text-align: center;
+	color: #37393F;
+	margin-bottom: 16px;
+}
+
+.work-title::before {
+	display: inline-block;
+	content: " ";
+	width: 12px;
+	height: 12px;
+	background: #40DDB6;
+	margin-right: 6px;
+
+}
+
+
+.work-main-title {
+	color: #37393F;
+	text-align: center;
+	font-family: "Poppins", sans-serif;
+	font-size: 40px;
+	font-weight: 700;
+	line-height: 1.21;
+	margin-bottom: 40px;
+
+}
+
+.work {
+	max-width: 378px;
+	display: inline-block;
+	background-color: #f4f4f4;
+
+
+}
+
+.work:not(:last-child) {
+	margin-right: 30px;
+
+}
+
+.work h3 {
+	color: #37393F;
+	text-align: center;
+	font-family: "Poppins", sans-serif;
+	font-size: 25px;
+	font-weight: 600;
+	line-height: 1.27;
+	margin-bottom: 16px;
+	margin-top: 22px;
+}
+
+.work p {
+	text-align: center;
+	line-height: 1.46;
+	margin-bottom: 37px;
+	line-height: 1.46;
+	min-width: 300px;
+
+}
+
+.work a {
+	display: block;
+	color: #6B77E5;
+	font-weight: 600;
+	text-transform: capitalize;
+	max-width: 112px;
+	height: 100%;
+	margin: 0 auto;
+	padding-bottom: 58px;
+}
+
+.work a:hover {
+	display: block;
+	color: #6d2bd8;
+	text-decoration: underline;
+
+
+}
+
+
+
+.work-main-title {
+	margin-bottom: 80px;
+}
+
+.items {
+	max-width: 1210px;
+	margin: 0 auto;
+
+}
+
+.item-1::before {
+	display: block;
+	content: " ";
+	width: 72px;
+	height: 72px;
+	background: url("../img/consulting/Icon-1.svg")no-repeat;
+	background-size: contain;
+	margin: 0 auto;
+	margin-top: -36px;
+
+}
+
+.item-2::before {
+	display: block;
+	content: " ";
+	width: 72px;
+	height: 72px;
+	background: url("../img/consulting/Icon-2.svg") 0 0 no-repeat;
+	background-size: contain;
+	margin: 0 auto;
+	margin-top: -36px;
+
+
+}
+
+.item-3::before {
+	display: block;
+	content: " ";
+	width: 72px;
+	height: 72px;
+	background: url("../img/consulting/Icon-3.svg") 0 0 no-repeat;
+	background-size: contain;
+	margin: 0 auto;
+	margin-top: -36px;
+
+}
+
+.jewellery {
+	max-width: 1265px;
+	margin: 0 auto 50px;
+	padding: 5px 15px;
+
+
+}
+
+.jewellery-info {
+	max-width: 465px;
+	display: inline-block;
+	margin-right: 15px;
+}
+
+
+
+.jewellery-info h2 {
+	color: #000;
+	font-family: "Cormorant Infant", serif;
+	font-size: 60px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 1.15;
+
+}
+
+.jewellery-info h2::after {
+	content: '';
+	display: block;
+	width: 65%;
+	height: 2px;
+	background-color: #78473B;
+	margin-top: 12px;
+}
+
+
+
+.jewellery-foto {
+	max-width: 770px;
+	display: inline-block;
+	margin-bottom: 33px;
+}
+
+.img-01 {
+	display: inline-block;
+	vertical-align: middle;
+
+}
+
+.img-02 {
+	vertical-align: middle;
+	display: inline-block;
+
+}
+
+
+
+
+.img-01 h4 {
+	color: #000;
+	font-family: "Cormorant Infant", serif;
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 1.40;
+	margin-bottom: 4px;
+}
+
+.img-01 h4::after {
+	content: "$144.00";
+	display: block;
+	width: 74px;
+	height: 34px;
+}
+
+.img-02 h4::after {
+	content: "$144.00";
+	display: block;
+	width: 74px;
+	height: 34px;
+}
+
+
+
+.img-01 img,
+.img-02 img {
+	margin: 10px -10px -10px 10px;
+	width: 100%;
+
+
+}
+
+.img-02 h3 {
+	max-width: 340px;
+	margin-bottom: 40px;
+	color: #000;
+	font-family: "Cormorant Infant", serif;
+	font-size: 46px;
+	font-weight: 700;
+	line-height: 1.13;
+}
+
+
+.img-02 h4 {
+	color: #000;
+	font-family: "Cormorant Infant", serif;
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 1.40;
+	margin-bottom: 4px;
+}
+
+.img-01 h4 a:hover,
+.img-02 h4 a:hover {
+	text-decoration: underline;
+	color: brown;
+}
+
+.img-01 h4:hover,
+.img-02 h4:hover {
+
+	color: rgb(36, 54, 156);
+}
+
+
+
+.img-01-foto,
+.img-02-foto {
+	max-width: 337px;
+	border: 1px solid black;
+	display: inline-block;
+	margin-bottom: 35px;
+	vertical-align: middle;
+}
+
+.img-01-foto {
+	margin-right: 45px;
+
+}
+
+.footer__info {
+	font-size: 20px;
+	width: 100px;
+	margin: 0 auto;
+	padding-bottom: 30px;
+	text-align: center;
+}
