@@ -1,0 +1,23 @@
+
+@import url("reset.css");
+
+body {
+	background: #FFF;
+	color: #7D7D7D;
+	font-size: 18px;
+	font-family: "Inter", sans-serif;
+	line-height: 1.2;
+
+}
+
+header {
+	max-width: 300px;
+	margin: 20px auto;
+background-color: blue;
+}
+
+footer h6{
+	padding:20px 0px;
+	width:170px ;
+	margin: 0 auto;
+}
