@@ -33,7 +33,7 @@
 }
 
 .car {
-	background: url(../img/2.jpg) no-repeat;
+	/*background: url(../img/2.jpg) no-repeat;*/
 	background-size: cover;
 	background-position: bottom;
 	width: 100%;
@@ -125,7 +125,7 @@
 .rear-rack {
 	position: absolute;
 	z-index: 5;
-	width: 60px;
+	width: 61px;
 	height: 110px;
 	left: 216px;
 	top: 10px;
@@ -168,7 +168,7 @@
 	position: absolute;
 	z-index: 5;
 	width: 10px;
-	height: 105px;
+	height: 106px;
 	left: 420px;
 	top: 12px;
 	background-color: blue;
