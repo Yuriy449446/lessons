@@ -33,7 +33,7 @@
 }
 
 .car {
-	/*background: url(../img/2.jpg) no-repeat;*/
+	background: url(../img/2.jpg) no-repeat;
 	background-size: cover;
 	background-position: bottom;
 	width: 100%;
