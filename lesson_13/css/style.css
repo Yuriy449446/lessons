@@ -208,7 +208,7 @@
 .back-door {
 	z-index: 7;
 	position: absolute;
-	left: 238px;
+	left: 239px;
 	top: 115px;
 	width: 182px;
 	height: 128px;
@@ -272,7 +272,7 @@
 
 .front-window {
 	position: absolute;
-	left: 426px;
+	left: 428px;
 	top: 17px;
 	width: 192px;
 	border-bottom: 100px solid rgba(0, 0, 5, 0.9);
