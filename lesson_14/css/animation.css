@@ -51,15 +51,28 @@
 
 
 
-.wrapper-fon {
+.wrapper-fon{
+	overflow: clip;
+	min-height: 100vh;
+	position: relative;
+}
+
+
+
+video {
+	overflow: hidden;
+	width: 100%;
+	
 	overflow: hidden;
 	width: 100%;
 	min-height: 100vh;
-	padding: 10px;
-	background: url(../img/highway.jpg) center no-repeat;
-	background-size: cover;
-	padding: 50px 0px;
+	
+	
+	
+	
 }
+
+
 
 
 @keyframes move {
@@ -92,14 +105,14 @@
 	width: 1000px;
 	bottom: 0px;
 	perspective: 1000px;
+	left: 10%;
 	
 }
 
 .car-container {
 	position: fixed;
-	bottom: 55px; 
+	bottom: 100px; 
 	left: 50%; 
-	transform: translateX(-50%); 
 	width: 900px;
 	height: 250px;
 	z-index: 90;
@@ -107,6 +120,52 @@
 	transform: scale(0.75);
  }
  
+
+
+ 
+ 
+ @media (max-width: 1600px) {
+ 	.car-container {
+ 		transform: scale(0.5);
+ 		bottom: 140px;
+ 	}
+
+ 	.bicycle-five img {
+ 		width: 120px;
+
+ 	}
+
+
+ 	.bicycle img {
+ 		width: 120px;
+
+ 	}
+
+ 	.bicycle-one,
+ 	.bicycle-two,
+ 	.bicycle-three,
+ 	.bicycle-four {
+
+ 		bottom: 220px;
+
+
+
+ 	}
+	 .telepnone {
+		position: fixed;
+		margin-bottom: 50px;
+		
+	 }
+
+
+ }
+ 
+
+
+
+
+
+
 
 .san-ran {
 	width: 100px;
@@ -134,52 +193,55 @@
 }
 
 .san {
-	position: relative;
+	position: absolute;
 	left: 20%;
-	top: 500px;
-	width: 1000px;
-
+	bottom: 0px;
+	width: 500px;
+	animation: ran 100s linear infinite normal running 0s forwards;
+	
 }
+
+
 
 @keyframes ran {
 	0% {
 		transform: rotate(0deg);
 		opacity: 0;
-		width: 900px;
+		width: 500px;
 		left: -10px;
 		
 	}
 
 	15% {
 		opacity: 0;
-		width: 1000px;
+		width: 600px;
 
 
 	}
 
 	25% {
 		opacity: 0.8;
-		width: 1100px;
+		width: 650px;
 		top: 10px;
 
 	}
 
 	30% {
 		opacity: 0.7;
-		width: 1100px;
+		width: 500px;
 		top: 30px;
 
 	}
    35% {
 		opacity: 0.2;
-		width: 1100px;
+		width: 450px;
 		top: 10px;
 
 	}
 
 	50% {
 		opacity: 0;
-		width: 1250px;
+		width: 400px;
 		top: 10px;
 	}
 
@@ -191,7 +253,7 @@
 
 	75% {
 		opacity: 0;
-		width: 1000px;
+		width: 300px;
 		right: 10px;
 	}
 
@@ -210,17 +272,14 @@
 	}
 }
 
-.san {
-	animation: ran 100s linear infinite normal running 0s forwards;
-}
+
 
 .bicycle-one,
 .bicycle-two,
 .bicycle-three,
 .bicycle-four {
 	position: fixed;
-	bottom: 10px;
-	bottom: 10px;
+	bottom: 50px;
 	min-width: 100%;
 	left: -200px;
 	z-index: 99;
@@ -230,20 +289,20 @@
 .bicycle-five{
 	position: fixed;
 	z-index: 150;
-	bottom: 30px;
+	bottom: 60px;
 	min-width: 100%;
-	left: 80px;
+	left: 90px;
 	transform: scale(0);
 }
 
 .bicycle-five img{
-	width: 180px;
+	width: 200px;
 	
 }
 
 
 .bicycle img {
-	width: 180px;
+	width: 200px;
 }
 
 @keyframes moveImage-one {
@@ -557,9 +616,14 @@
  
  .telepnone {
 	position: fixed;
-	bottom: 90px;
+	bottom: -17px;
 	min-width: 100%;
 	animation: telepnone-ran 20s linear infinite;
+	z-index:530;
  }
  
- 
+ .bird{
+	position: absolute;
+	bottom: 500px;
+	height: 200px;
+ }
