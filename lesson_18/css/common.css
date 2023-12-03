@@ -1,0 +1,479 @@
+@import url("fonts.css");
+
+/* Скидання стилів */
+@import url("reset.css");
+
+body {
+	font-family: "Inter", sans-serif;
+	color: #727272;
+	
+}
+
+
+[class*="__limitation"] {
+	max-width: 1220px; 
+	padding-left: 15px;
+	padding-right: 15px;
+	margin: 0 auto;
+}
+
+
+.jewelry {
+	min-height: 106px;
+	align-items: center;
+	display: flex;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 50;
+	background-color: #fff;
+}
+.jewelry__limitation {
+	display: flex;
+	justify-content: space-between;
+	gap: 20px;
+	align-items: center;
+	flex-grow: 1;
+	position: relative;
+}
+.jewelry__logo {
+	color: #000;
+	font-family: "Merriweather";
+	font-size: 30px;
+	font-style: italic;
+	font-weight: 700;
+	flex-shrink: 0;
+	position: relative;
+	z-index: 5;
+}
+
+.jewelry__item--arow{
+	position: relative;
+	color: #000;
+	font-family: "Merriweather";
+	font-size: 20px;
+	font-weight: 400;
+	
+}
+
+.jewelry__item--active a{
+	font-weight: 700;
+	text-decoration-line: underline;
+	color: #000;
+	font-family: "Merriweather";
+	font-size: 20px;
+		
+}
+
+
+.jewelry__link::after {
+	content: "";
+	background: url("../img/sub-menu-arrow.png") 0 0 no-repeat;
+	flex: 0 0 16px;
+	height: 8px;
+	width: 16px;
+	transition: all 0.3s ease 0s;
+	
+}
+
+.jewelry__item--arow .jewelry__link {
+	display: flex;
+	align-items: center;
+	gap: 4px;
+}
+
+.jewelry__icon-menu {
+	width: 30px;
+	display: block;
+	flex: 0 0 30px;
+	height: 18px;
+	position: relative;
+	z-index: 5;
+}
+.jewelry__icon-menu::before,
+.jewelry__icon-menu::after,
+.jewelry__icon-menu span {
+	content: "";
+	height: 2px;
+	width: 100%;
+	position: absolute;
+	left: 0;
+	transition: all 0.3s;
+	background-color: #000;
+}
+.jewelry__icon-menu::before {
+	top: 0;
+}
+.jewelry__icon-menu::after {
+	bottom: 0;
+}
+.jewelry__icon-menu span {
+	top: 50%;
+	margin-top: -1px;
+}
+
+.jewelry__icon-menu{
+	display: none;
+}
+.open .jewelry__icon-menu::before{
+	transform: rotate(-45deg);
+		top: 50%;
+		margin-top: -1px;
+}
+.open .jewelry__icon-menu span{
+	transform:scale(0);
+		
+}
+.open .jewelry__icon-menu::after{
+	transform: rotate(45deg);
+		top: 50%;
+		margin-top: -1px;
+}
+
+
+@media (any-hover: hover) {
+	.jewelry__item--arow:hover .sub-menu-jewelry {
+		opacity: 1;
+		transform: translate(0px, 0px);
+		visibility: visible;
+		pointer-events: all;
+		transition: all 0.3s;
+		
+	}
+	.jewelry__item--arow:hover .jewelry__link::after {
+		transform: rotate(-180deg);
+		transition: all 0.3s;
+		
+	}
+	.jewelry__item--arow:hover .jewelry__link {
+		text-decoration: underline;
+	}
+
+   .sub-menu-jewelry__item:hover .sub-menu-jewelry__link{
+		text-decoration: underline;
+		text-decoration-color: rgb(172, 165, 165);
+	}
+
+}
+
+.jewelry__list {
+	display: flex;
+	justify-content: center;
+	column-gap: 36px;
+	row-gap: 8px;
+	flex-wrap: wrap;
+}
+
+.sub-menu-jewelry {
+	transition: all 0.3s;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	padding-top: 5px;
+	transform: translate(0px, -20%);
+	opacity: 0;
+	visibility: hidden;
+	pointer-events: none;
+}
+
+
+.sub-menu-jewelry__list{
+	color: azure;
+	width: 200px;
+	border-radius: 15px;
+	padding: 15px;
+	background-color: #0E333D;;
+	
+}
+.sub-menu-jewelry__item:not(:last-child){
+	margin-bottom: 10px;
+	font-family: "Merriweather";
+	font-size: 18px;
+	
+}
+
+
+
+.jewelry__log-in {
+	color: #FFF;
+font-family: "Merriweather";
+font-size: 20px;
+font-weight: 700;
+border-radius: 5px;
+background: #0E333D;
+padding: 12px 29px 14px 26px;
+flex-shrink: 0;
+position: relative;
+z-index: 5;
+}
+
+@media (any-hover: hover) {
+	.jewelry__log-in:hover{
+      background: #196980;
+	}
+}
+
+@media (max-width: 1042.98px){
+	.jewelry{
+		min-height: 60px;
+	}
+	.jewelry__menu{
+		position: fixed;
+		width: 100%;
+		height: 100%;
+		overflow: auto;
+		top: 0;
+		left:-100%;
+		transition: left 0.3s;
+		padding: 80px 15px 30px 15px;
+		background-color: #2c6a7b;;
+	}
+	.open .jewelry__menu{
+		
+		left: 0;
+		
+	}
+ 
+
+	.jewelry__icon-menu{
+		display: block;
+		margin-right: 15px;
+	}
+
+   
+	.jewelry__list {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		row-gap: 22px;
+		overflow: auto;
+	}
+	
+	.jewelry__link {
+		color: #FFF;
+		font-size: 22px;
+	}
+	
+	.jewelry__item--active{
+		font-size: 22px;
+	}
+  
+	.sub-menu-jewelry{
+		
+		position: relative;
+		transform: translate(0px, 0%);
+	}
+	.jewelry__link::after {
+		
+		filter: invert(1);
+	}
+	.sub-menu-jewelry {
+		
+		position: relative;
+		opacity: 1;
+		visibility: visible;
+		
+	}
+	.jewelry__link{
+		
+		margin-bottom: 10px;
+		
+		
+	}
+	.jewelry__item--arow:hover .jewelry__link::after {
+		transform: rotate(0deg);
+		
+		
+	}
+
+}
+
+@media (max-width: 426.98px){
+	.jewelry__logo {
+		
+		font-size: 25px;
+		
+		
+		
+	}
+	.jewelry__log-in {
+		font-size: 18px;
+	 padding: 10px 20px;
+	
+	}
+	.jewelry__limitation{
+		gap:10px
+	}
+	
+	
+	.jewelry__item--active{
+		font-size: 22px;
+	}
+
+	.jewelry__item--arow:hover .sub-menu-jewelry{
+		
+		position: relative;
+		
+	}
+	.jewelry__link::after {
+		
+		filter: invert(1);
+	}
+   .sub-menu-jewelry {
+		
+		position: relative;
+		opacity: 1;
+		visibility: visible;
+		
+	}
+	.jewelry__link{
+		
+		margin-bottom: 10px;
+		
+		
+	}
+	.jewelry__item--arow:hover .jewelry__link::after {
+		transform: rotate(0deg);
+		
+		
+	}
+
+
+}
+
+
+.disign {
+	padding-top:206px ;
+	padding-bottom: 50px;
+}
+.disign__limitation {
+	
+	display: flex;
+	justify-content: space-between;
+	column-gap: 86px;
+	
+}
+.disign__info {
+	padding-top: 84px;
+}
+.dising-title {
+	color: #0E333D;
+	font-family: "DM Serif Text";
+	font-size: clamp(2.1875rem, 1.199rem + 4.9425vw, 4.875rem);
+	line-height: 1.27;
+	margin-bottom:clamp(1.25rem, 0.7902rem + 2.2989vw, 2.5rem);
+}
+.dising-tex {
+	color: #727272;
+	font-family: "Inter";
+	font-size:clamp(1.125rem, 1.033rem + 0.4598vw, 1.375rem);
+	line-height: 1.48;
+	margin-bottom:clamp(2.1875rem, 1.8886rem + 1.4943vw, 3rem);
+}
+.disign__now {
+	display: flex;
+	gap: clamp(1.25rem, 0.6293rem + 3.1034vw, 2.9375rem);
+	padding-bottom:65px;
+	
+}
+.disign__snop {
+	color: #FFF;
+	font-family: "DM Serif Text";
+	font-size: 28px;
+	padding: 10px 44px;
+	border-radius: 5px;
+   background: #0E333D;
+}
+.disign__video {
+	color: #0E333D;
+	font-family: "DM Serif Text";
+	font-size: 28px;
+	font-weight: 400;
+	display: flex;
+	flex-shrink: 1;
+	align-items: center;
+	
+}
+@media (any-hover: hover){
+	.disign__video:hover{
+		text-decoration: underline;
+	} 
+	.disign__snop:hover{
+		background-color: #071c22; ;
+	}
+
+}
+
+.disign__img {
+	display: flex;
+	gap: 32px;
+	max-height: 536px;
+	align-items: flex-end;
+
+}
+.disign__img img {
+
+	
+	aspect-ratio: 245 / 467;
+	object-fit: cover;
+
+}
+
+.disign__foto-top{
+	align-self:flex-start;
+}
+
+
+@media (max-width: 1140.98px){
+	.disign__limitation {
+		flex-direction: column;
+	}
+	.disign__img{
+		
+		align-self: center;
+		
+	} 
+	.disign__now{
+		display: flex;
+		justify-content: center;
+	
+	}
+
+	.dising-title {
+		text-align: center;
+		padding: 0 15px;
+	}
+	.dising-tex {
+		text-align: center;
+	}
+   .disign__info {
+		
+		padding: 50px 15px 0px;
+	}
+	.dising-tex{
+		text-align: center;
+		word-break: break-word;
+		
+	}
+   
+}
+@media (max-width: 768.98px){
+	.disign__img
+	              {
+		flex-direction: column;
+		align-self: center;
+		
+	} 
+	.disign__now{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.disign {
+		padding-top:106px ;
+		padding-bottom: 50px;
+	}
+}
