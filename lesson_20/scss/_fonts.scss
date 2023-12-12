@@ -1,0 +1,43 @@
+/* Підключення вручну */
+
+
+@font-face {
+	font-family: 'christmas ScriptC';
+	src:
+		url("../fonts/ChristmasScriptC.woff2") format("woff2"),
+		url("../fonts/ChristmasScriptC.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Beer money';
+	src:
+		url("../fonts/beermoney.woff2") format("woff2"),
+		url("../fonts/beermoney.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Intro Demo';
+	src:
+		url("../fonts/IntroDemo-BlackCAPS.woff2") format("woff2"),
+		url("../fonts/IntroDemo-BlackCAPS.woff") format("woff");
+	font-weight: 900;
+	font-style: normal;
+	font-display: swap;
+}
+
+
+@font-face {
+	font-family: 'Intro Demo';
+	src:
+		url("../fonts/IntroDemoCond-LightCAPS.woff2") format("woff2"),
+		url("../fonts/IntroDemoCond-LightCAPS.woff") format("woff");
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+}
