@@ -92,6 +92,9 @@ main{
 		flex-direction: column;
 		row-gap: 27px;
 		max-width: 163px;
+		@media (max-width: 400.98px){
+			max-width: 135px;
+		}
 	}
 	// .item__title
 	&__title {

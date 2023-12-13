@@ -190,6 +190,11 @@ main {
   row-gap: 27px;
   max-width: 163px;
 }
+@media (max-width: 400.98px) {
+  .item__body {
+    max-width: 135px;
+  }
+}
 .item__title {
   color: #37393F;
   font-size: clamp(1.25rem, 1.75rem - 2.5vw, 1.5625rem);
