@@ -157,6 +157,11 @@ main {
 .business__item {
   padding: 30px;
 }
+@media (max-width: 400.98px) {
+  .business__item {
+    padding: 20px;
+  }
+}
 
 .item {
   background: #F4F4F4;
@@ -168,16 +173,6 @@ main {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
-@media (max-width: 400.98px) {
-  .item__row {
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    -webkit-column-gap: 25px;
-       -moz-column-gap: 25px;
-            column-gap: 25px;
-  }
 }
 .item__body {
   display: -webkit-box;
@@ -223,6 +218,12 @@ main {
   width: 72px;
   height: 72px;
   border-radius: 50%;
+}
+@media (max-width: 400.98px) {
+  .item__img {
+    width: 50px;
+    height: 50px;
+  }
 }
 
 .service {
