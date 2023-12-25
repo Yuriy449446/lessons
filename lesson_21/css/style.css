@@ -1101,6 +1101,7 @@ body {
 }
 .social-footer__img {
   display: inline-block;
+  border-radius: 50%;
 }
 .social-footer__download {
   grid-column: 4;
