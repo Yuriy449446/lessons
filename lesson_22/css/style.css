@@ -2027,12 +2027,14 @@ body {
   .free-business__input {
     font-size: 1rem;
     padding-left: 1.25rem;
+    width: 100%;
   }
 }
 @media (max-width: 25.06125em) {
   .free-business__input {
     font-size: 0.875rem;
     padding-left: 0.625rem;
+    width: 100%;
   }
 }
 .free-business__date-box {
@@ -2043,6 +2045,7 @@ body {
 @media (max-width: 48.06125em) {
   .free-business__date-box {
     grid-template-columns: 1fr;
+    width: 100%;
   }
 }
 .free-business textarea {
@@ -2669,9 +2672,9 @@ body {
     display: grid;
     grid-template-columns: auto;
     row-gap: 2.1875rem;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
 }
 .footer-nav__colum {
