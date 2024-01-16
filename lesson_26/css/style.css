@@ -1,6 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Merriweather:regular,700,700italic&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Cormorant+Infant:500,600,700,700italic&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Inter:regular&display=swap");
+@import "../css/style.css";
 *,
 *::before,
 *::after {
@@ -77,7 +75,7 @@ textarea {
 
 body {
   background-color: #333;
-  font-size: 0.875rem;
+  font-size: toRem(14);
 }
 
 .wrapper {
@@ -108,7 +106,7 @@ ul li {
 }
 
 .list {
-  font-size: 1.28125rem;
+  font-size: toRem(20.5);
 }
 
 .link {
