@@ -1,0 +1,111 @@
+@use "sass:math";
+
+// Мінімальна ширина сторінки
+$minWidth: 320;
+// Ширина полотна (макету)
+$maxWidth: 1920;
+// Ширина обмежуючого контейнера (0 = немає обмеження)
+$maxWidthContainer: 1170;
+// Загальний відступ у контейнера
+// (30 = по 15px ліворуч і праворуч, 0 = немає відступу)
+$containerPadding: 30;
+// Ширина спрацьовування першого брейкпоінту
+$containerWidth: $maxWidthContainer + $containerPadding;
+
+// Шрифти
+@import "_fonts.scss";
+// Обнулення
+@import "_reset.scss";
+// Компоненти
+@import "_common.scss";
+// Функції
+@import "_functions.scss";
+
+body {
+	background-color: #333;
+	font-size: toRem(14);
+}
+.wrapper {
+	overflow: clip;
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+.wrapper main {
+	flex-grow: 1;
+}
+
+.page {
+	padding: 50px;
+}
+
+ul li {
+	font-size: 30px;
+	color: #fff;
+}
+.list {
+	font-size: toRem(20.5);
+}
+.link {
+	font-size: 50px;
+	color: #fff;
+}
+.button {
+	background-color: yellow;
+	color: #000;
+	padding: 15px;
+	transform: translate(0px, 50px);
+	opacity: 0;
+	visibility: hidden;
+
+	&.show {
+		transition: all 0.8s;
+		transform: translate(0px, 0px);
+		opacity: 1;
+		visibility: visible;
+	}
+}
+
+.header {
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 50;
+	background-color: #794f45;
+	// .header__container
+	&__container {
+	}
+	// .header__menu
+	&__menu {
+	}
+}
+
+body{
+	opacity: 0;
+}
+
+.show body{
+	opacity: 1;
+}
+
+
+.footer{
+	background-color: cadetblue;
+	transition: all 0.3s ease;
+	&.color{
+		background-color: rgb(197, 182, 16);
+	}
+	h5{
+		text-align: center;
+		color: antiquewhite;
+		padding: 30px 0px;
+		
+	}
+}
+
+.main-item{
+	font-size: 25px;
+	color: antiquewhite;
+	padding: 25px;
+}
